@@ -37,6 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Сторонние приложения
+    'rest_framework',
+    'corsheaders',
+    'django_filters',
+    # Local apps
+    'bots.apps.BotsConfig' # Используем конфиг приложения
 ]
 
 MIDDLEWARE = [
