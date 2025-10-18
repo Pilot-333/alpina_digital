@@ -31,7 +31,7 @@ class BotSerializer(serializers.ModelSerializer):
         model = Bot
         fields = [
             'id', 'name', 'description', 'bot_type', 'gpt_model',
-            'temperature', 'max_tokens', 'system_prompt', 'is_active',
+            'creativity_level', 'max_tokens', 'system_prompt', 'is_active',
             'created_by', 'created_at', 'updated_at', 'scenarios'
         ]
         read_only_fields = ['id', 'created_by', 'created_at', 'updated_at']
